@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ASG Arbres Services Genève · Élagage & Jardins</title>
+  <!-- SEO -->
+  <meta name="description" content="ASG Arbres Services Genève : élagage par grimpe ou nacelle, taille fruitière, abattage, paysagisme. Professionnels à Satigny, Genève et Vaud.">
+  <meta name="keywords" content="élagage Genève, taille arbres, grimpe, nacelle, abattage, dessouchage, paysagiste, jardin, Vaud, ASG">
+  <link rel="canonical" href="https://arbres-services-geneve.ch">
+  <!-- Open Graph -->
+  <meta property="og:title" content="ASG Arbres Services Genève">
+  <meta property="og:description" content="L'art de prendre soin de vos arbres, par des professionnels. Élagage, taille, abattage, paysagisme dans le canton de Genève et Vaud.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://arbres-services-geneve.ch">
+  <!-- styles & fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300..700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #f7f3ee;
+      color: #1e2b1e;
+      line-height: 1.6;
+    }
+    .container {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+    /* couleurs nature */
+    :root {
+      --vert-profondeur: #1e3b2a;
+      --vert-feuillage: #2b5e3b;
+      --vert-tendre: #4b7a5a;
+      --automne: #a56c3b;
+      --beige: #ede7dc;
+      --gris-bois: #5f5b52;
+    }
+    h1, h2, h3 {
+      font-family: 'Playfair Display', serif;
+      font-weight: 700;
+      color: var(--vert-profondeur);
+    }
+    h1 { font-size: 2.8rem; letter-spacing: -0.02em; }
+    h2 { font-size: 2.2rem; border-left: 6px solid var(--automne); padding-left: 20px; margin: 2rem 0 1.5rem; }
+    h3 { font-size: 1.4rem; margin: 1rem 0 0.5rem; }
+    .slogan {
+      font-family: 'Playfair Display', serif;
+      font-style: italic;
+      font-size: 1.4rem;
+      color: var(--automne);
+      margin-top: -0.2rem;
+    }
+    /* header */
+    header {
+      background: var(--vert-profondeur);
+      color: #f0ebe3;
+      padding: 1.2rem 0;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    }
+    .header-flex {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+    }
+    .logo span {
+      font-family: 'Playfair Display', serif;
+      font-weight: 700;
+      font-size: 2rem;
+      letter-spacing: 1px;
+    }
+    .logo small {
+      display: block;
+      font-size: 0.85rem;
+      color: #c6b9a8;
+      letter-spacing: 2px;
+    }
+    .nav-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      list-style: none;
+    }
+    .nav-links a {
+      color: #f0ebe3;
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 1rem;
+      border-bottom: 2px solid transparent;
+      transition: 0.2s;
+      padding: 0.2rem 0;
+    }
+    .nav-links a:hover {
+      border-bottom-color: var(--automne);
+      color: #f7d9b0;
+    }
+    /* hero */
+    .hero {
+      background: linear-gradient(145deg, #e7dfd4, #d9cdbe);
+      padding: 3rem 0 4rem;
+      border-bottom: 8px solid var(--automne);
+    }
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
+      align-items: center;
+    }
+    .hero-text .btn {
+      display: inline-block;
+      background: var(--vert-profondeur);
+      color: white;
+      padding: 0.8rem 2.4rem;
+      border-radius: 40px;
+      margin-top: 1.5rem;
+      font-weight: 600;
+      text-decoration: none;
+      letter-spacing: 0.5px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: 0.2s;
+    }
+    .hero-text .btn:hover {
+      background: var(--automne);
+      transform: scale(1.02);
+    }
+    .hero-image {
+      background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" fill="%23355e3b" opacity="0.5"><rect width="400" height="300" fill="%23d9cdbe"/><circle cx="200" cy="120" r="70" fill="%232b5e3b" opacity="0.5"/><circle cx="270" cy="60" r="40" fill="%234b7a5a" opacity="0.4"/><circle cx="130" cy="50" r="45" fill="%234b7a5a" opacity="0.4"/><rect x="160" y="180" width="80" height="120" fill="%235f5b52" opacity="0.3"/><polygon points="190,150 210,150 220,180 180,180" fill="%234b7a5a" opacity="0.5"/></svg>') no-repeat center/contain;
+      height: 240px;
+      border-radius: 40px 0 40px 0;
+      box-shadow: 0 20px 30px -10px rgba(0,0,0,0.2);
+      background-color: #c7bcad;
+    }
+    /* sections */
+    section {
+      padding: 2.5rem 0 3rem;
+      border-bottom: 1px solid #ddd6cb;
+    }
+    .services-grid, .team-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      margin: 2rem 0;
+    }
+    .service-card, .team-card {
+      background: white;
+      border-radius: 28px;
+      padding: 1.8rem 1.5rem;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.04);
+      transition: 0.25s;
+      border: 1px solid #ede6dc;
+    }
+    .service-card:hover {
+      transform: translateY(-6px);
+      border-color: var(--automne);
+      box-shadow: 0 12px 28px rgba(0,0,0,0.08);
+    }
+    .service-icon {
+      font-size: 2.8rem;
+      margin-bottom: 0.5rem;
+      display: block;
+      line-height: 1;
+    }
+    .service-card p {
+      font-size: 0.95rem;
+      color: #333;
+      margin: 0.5rem 0;
+    }
+    .service-card .badge {
+      display: inline-block;
+      background: var(--vert-feuillage);
+      color: white;
+      font-size: 0.7rem;
+      font-weight: 600;
+      padding: 0.2rem 1rem;
+      border-radius: 30px;
+      letter-spacing: 0.5px;
+      margin-top: 0.5rem;
+    }
+    .team-card {
+      text-align: center;
+      background: #fcf9f5;
+    }
+    .team-card .avatar {
+      font-size: 4.5rem;
+      background: var(--beige);
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 0.8rem;
+      border: 4px solid var(--automne);
+      font-weight: 300;
+      color: var(--vert-profondeur);
+    }
+    .team-card .role {
+      font-weight: 600;
+      color: var(--automne);
+      font-size: 0.9rem;
+    }
+    .team-card p {
+      font-size: 0.9rem;
+      margin: 0.5rem 0;
+      color: #3f3a33;
+    }
+    .tag {
+      background: var(--vert-tendre);
+      color: white;
+      border-radius: 50px;
+      padding: 0.2rem 1.2rem;
+      font-size: 0.7rem;
+      display: inline-block;
+      margin-top: 0.5rem;
+    }
+    .contact-block {
+      background: #e6ddd1;
+      border-radius: 40px;
+      padding: 2.5rem 2rem;
+      margin: 2rem 0;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      justify-content: space-between;
+    }
+    .contact-item {
+      display: flex;
+      align-items: center;
+      gap: 0.8rem;
+    }
+    .contact-item strong {
+      font-weight: 600;
+      color: var(--vert-profondeur);
+    }
+    .lang-badge {
+      background: var(--vert-profondeur);
+      color: #efe7dd;
+      padding: 0.2rem 0.8rem;
+      border-radius: 30px;
+      font-size: 0.7rem;
+      font-weight: 600;
+    }
+    .values {
+      background: var(--vert-profondeur);
+      color: #efe7dd;
+      padding: 2rem 2rem;
+      border-radius: 60px;
+      margin: 2rem 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2.5rem;
+    }
+    .values span {
+      font-weight: 400;
+      font-size: 1rem;
+      letter-spacing: 0.5px;
+    }
+    .values i {
+      font-style: normal;
+      font-weight: 300;
+      opacity: 0.8;
+    }
+    footer {
+      background: #1e2b1e;
+      color: #cfc5b8;
+      padding: 2rem 0;
+      text-align: center;
+      font-size: 0.9rem;
+      border-top: 6px solid var(--automne);
+    }
+    footer a {
+      color: #dac7b0;
+      text-decoration: none;
+    }
+    .form-simple {
+      background: white;
+      border-radius: 40px;
+      padding: 2rem;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.04);
+      margin-top: 2rem;
+    }
+    .form-simple input, .form-simple textarea {
+      border: 1px solid #ddd2c4;
+      padding: 0.8rem 1rem;
+      border-radius: 40px;
+      width: 100%;
+      margin-bottom: 1rem;
+      font-family: 'Inter', sans-serif;
+      background: #fcf9f5;
+    }
+    .form-simple button {
+      background: var(--vert-profondeur);
+      border: none;
+      color: white;
+      font-weight: 600;
+      padding: 0.8rem 2.4rem;
+      border-radius: 40px;
+      cursor: pointer;
+      transition: 0.2s;
+    }
+    .form-simple button:hover {
+      background: var(--automne);
+    }
+    @media (max-width: 800px) {
+      .hero-grid { grid-template-columns: 1fr; }
+      h1 { font-size: 2.2rem; }
+      .nav-links { gap: 1.2rem; }
+    }
+    .btn-mailto {
+      background: var(--automne);
+      color: white;
+      padding: 0.6rem 1.6rem;
+      border-radius: 40px;
+      text-decoration: none;
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container header-flex">
+      <div class="logo">
+        <span>ASG</span>
+        <small>Arbres Services Genève</small>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#services">Services</a></li>
+        <li><a href="#equipe">Équipe</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#valeurs">Valeurs</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <div class="hero">
+    <div class="container hero-grid">
+      <div class="hero-text">
+        <h1>L'art de prendre soin de vos arbres</h1>
+        <div class="slogan">par des professionnels</div>
+        <p style="margin: 1.5rem 0 0.5rem; font-size: 1.2rem; color: #1e2b1e;">Élagage, taille, abattage, paysagisme &nbsp;·&nbsp; Genève – Vaud</p>
+        <p style="color: #3d3a33; max-width: 500px;">Grimpe ou nacelle, nous mettons notre passion et notre expertise au service de vos arbres et jardins.</p>
+        <a href="#services" class="btn">Découvrir nos services</a>
+      </div>
+      <div class="hero-image"></div>
+    </div>
+  </div>
+
+  <div class="container" id="services">
+    <h2>Nos services · expertise arboricole</h2>
+    <div class="services-grid">
+      <div class="service-card">
+        <span class="service-icon">🌳</span>
+        <h3>Élagage & entretien</h3>
+        <p>Par grimpe ou nacelle, nous maîtrisons toutes les techniques pour la santé et la sécurité de vos arbres.</p>
+        <span class="badge">grimpe / nacelle</span>
+      </div>
+      <div class="service-card">
+        <span class="service-icon">🍎</span>
+        <h3>Taille fruitière & arbustes</h3>
+        <p>Taille raisonnée pour favoriser la fructification et la vigueur de vos fruitiers, haies et arbustes d'ornement.</p>
+        <span class="badge">spécialiste</span>
+      </div>
+      <div class="service-card">
+        <span class="service-icon">🪚</span>
+        <h3>Abattage & dessouchage</h3>
+        <p>Abattage spéciaux avec techniques sécurisées, et dessouchage intégral pour libérer votre terrain.</p>
+        <span class="badge">sécurisé</span>
+      </div>
+      <div class="service-card">
+        <span class="service-icon">🌿</span>
+        <h3>Paysagisme & aménagement</h3>
+        <p>Aménagement de terrasses, milieux naturels, haies vives, constructions en bois pour un jardin harmonieux.</p>
+        <span class="badge">création</span>
+      </div>
+    </div>
+    <p style="margin: 1rem 0; background: #ede7dc; padding: 0.8rem 1.5rem; border-radius: 60px; display: inline-block;"><strong>Transport jusqu’à 4,5 tonnes</strong> · matériel et évacuation</p>
+  </div>
+
+  <!-- Équipe -->
+  <section id="equipe">
+    <div class="container">
+      <h2>L'équipe · des professionnels enthousiastes</h2>
+      <div class="team-grid">
+        <div class="team-card">
+          <div class="avatar">🌳</div>
+          <h3>Bendik Häuserman</h3>
+          <div class="role">Fondateur · Arboriste grimpeur</div>
+          <p>10 ans d'expérience en élagage et soin des arbres. Passionné par la biodiversité.</p>
+          <span class="tag">Français · Anglais · Allemand</span>
+        </div>
+        <div class="team-card">
+          <div class="avatar">🧑‍🌾</div>
+          <h3>Lena Müller</h3>
+          <div class="role">Paysagiste & jardinière</div>
+          <p>Spécialiste en aménagements naturels et constructions bois. Créativité et respect du vivant.</p>
+          <span class="tag">Français · Allemand</span>
+        </div>
+        <div class="team-card">
+          <div class="avatar">🪵</div>
+          <h3>Marcello Rossi</h3>
+          <div class="role">Grimpeur · taille fruitière</div>
+          <p>Expert en taille douce et abattage complexe. Formé aux techniques suisses.</p>
+          <span class="tag">Français · Italien</span>
+        </div>
+        <div class="team-card">
+          <div class="avatar">🌱</div>
+          <h3>Sophie Chappuis</h3>
+          <div class="role">Arboriste & dessoucheuse</div>
+          <p>Passionnée par la régénération des sols et la santé des arbres urbains.</p>
+          <span class="tag">Français · Anglais</span>
+        </div>
+      </div>
+      <p style="text-align: center; color: #4a423a; font-style: italic;">« Chaque membre partage les valeurs humaines et sociales de l’entreprise. »</p>
+    </div>
+  </section>
+
+  <!-- valeurs + contact -->
+  <div class="container" id="valeurs">
+    <div class="values">
+      <span>🤝 <i>Humain avant tout</i></span>
+      <span>🌍 <i>Respect de l'environnement</i></span>
+      <span>❤️ <i>Engagement social</i></span>
+      <span>🌿 <i>Passion du vivant</i></span>
+    </div>
+  </div>
+
+  <section id="contact">
+    <div class="container">
+      <h2>Contactez-nous</h2>
+      <div class="contact-block">
+        <div class="contact-item"><span style="font-size:1.6rem;">📍</span> <strong>ASG Arbres Services Genève</strong> · Satigny (GE)</div>
+        <div class="contact-item"><span style="font-size:1.6rem;">📞</span> <a href="tel:+41799217723" style="color: #1e2b1e; font-weight:600;">+41 79 921 77 23</a></div>
+        <div class="contact-item"><span style="font-size:1.6rem;">✉️</span> <a href="mailto:bendik.hauserman@bluewin.ch" class="btn-mailto">bendik.hauserman@bluewin.ch</a></div>
+      </div>
+      <div style="display: flex; flex-wrap: wrap; gap: 1rem; margin: 1rem 0;">
+        <span class="lang-badge">🇫🇷 Français</span>
+        <span class="lang-badge">🇬🇧 English</span>
+        <span class="lang-badge">🇩🇪 Deutsch</span>
+      </div>
+      <p style="font-weight: 500;">Services pour particuliers, régies immobilières, entreprises.</p>
+      
+      <!-- formulaire sans SMTP : mailto -->
+      <div class="form-simple">
+        <p style="font-weight: 500; margin-bottom: 1rem;">Demande de devis ou d'informations</p>
+        <form action="mailto:bendik.hauserman@bluewin.ch" method="POST" enctype="text/plain">
+          <input type="text" name="Nom" placeholder="Votre nom" required>
+          <input type="email" name="Email" placeholder="Votre email" required>
+          <input type="tel" name="Téléphone" placeholder="Téléphone">
+          <textarea rows="3" name="Message" placeholder="Décrivez votre projet ou votre demande..."></textarea>
+          <button type="submit">Envoyer par email →</button>
+          <p style="font-size:0.8rem; margin-top:0.8rem; color:#5f5b52;">💡 Le message s'ouvrira dans votre client mail.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>© 2026 ASG Arbres Services Genève · Satigny · <a href="mailto:bendik.hauserman@bluewin.ch">bendik.hauserman@bluewin.ch</a> · +41 79 921 77 23</p>
+      <p style="margin-top: 0.6rem; font-size:0.75rem; letter-spacing:0.5px;">L'art de prendre soin de vos arbres, par des professionnels.</p>
+    </div>
+  </footer>
+
+  <!-- small script pour le confort -->
+  <script>
+    // smooth scroll interne
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if(target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      });
+    });
+  </script>
+</body>
+</html>
