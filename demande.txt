@@ -33,7 +33,10 @@ Ces services sont proposés aux particulier, régies immobilières et entrerpise
 
 J'aime bien le contenu du site https://arboristes-grimpeurs.ch/.
 
-Pourrais tu me proposer un site web statique, plutot dans des couleurs nature, vert.
+Pourrais tu me proposer un site web statique, plutot dans des couleurs nature, vert, vert foncé, automnale
+N'utilise pas de serveur SMTP pour l'envoi de formulaire, il faut utiliser le mail de l'utilsateur.
+L'entreprise défend des valeurs hmanitaires et sociales, elle palce l'humain au dessus du commercial. 
+Il faut que le référencement soir optimisé.
 
 Demande moi des détails lors de la construction du site
 
