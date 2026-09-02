@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nos Services & Prestations | ASG Arbres Services Genève</title>
+  <meta name="description" content="Découvrez les services spécialisés d'ASG Arbres Services Genève : élagage par grimpe et nacelle, taille fruitière, abattage délicat, dessouchage, aménagements bois et transport jusqu'à 4.5 tonnes.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23194a32'><path d='M12 2L4 12h4v8h8v-8h4L12 2z'/></svg>">
+  <style>
+    .service-detail-block {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3.5rem;
+      align-items: center;
+      margin-bottom: 5rem;
+      padding-bottom: 5rem;
+      border-bottom: 1px solid var(--color-border);
+    }
+    .service-detail-block:last-child {
+      border-bottom: none;
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+    .service-detail-block.reverse {
+      grid-template-columns: 1fr 1fr;
+    }
+    .service-detail-block.reverse .service-detail-img {
+      order: 1;
+    }
+    .service-detail-block.reverse .service-detail-content {
+      order: 2;
+    }
+    .service-detail-img-wrap {
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      box-shadow: var(--shadow-lg);
+      height: 420px;
+    }
+    .service-detail-img-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .reglementation-box {
+      background: var(--color-surface);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-md);
+      padding: 2.5rem;
+      margin-top: 4rem;
+      box-shadow: var(--shadow-sm);
+    }
+    @media (max-width: 992px) {
+      .service-detail-block, .service-detail-block.reverse {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+      }
+      .service-detail-block.reverse .service-detail-img {
+        order: 2;
+      }
+      .service-detail-block.reverse .service-detail-content {
+        order: 1;
+      }
+      .service-detail-img-wrap {
+        height: 320px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Bar -->
+  <div class="top-bar">
+    <div class="container">
+      <div class="top-bar-inner">
+        <div class="top-bar-contact">
+          <a href="tel:+41799217723" class="top-bar-item">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+            <strong>+41 79 921 77 23</strong>
+          </a>
+          <a href="mailto:bendik.hauserman@bluewin.ch" class="top-bar-item">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+            <span>bendik.hauserman@bluewin.ch</span>
+          </a>
+          <span class="top-bar-item">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            <span>Satigny (GE) • Canton de Genève & Vaud</span>
+          </span>
+        </div>
+        <div class="top-bar-right">
+          <span class="lang-badge">FR • EN • DE</span>
+          <span class="swiss-tag"><span class="swiss-cross"></span> Qualité Suisse</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="main-header">
+    <div class="container">
+      <div class="header-inner">
+        <a href="index.html" class="brand-logo">
+          <div class="logo-icon-wrap">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+              <path d="M12 22v-7"></path>
+              <path d="M9 15c-3 0-5-2-5-5 0-4 4-8 8-8s8 4 8 8c0 3-2 5-5 5"></path>
+            </svg>
+          </div>
+          <div class="brand-text">
+            <span class="brand-title">ASG</span>
+            <span class="brand-subtitle">Arbres Services Genève</span>
+          </div>
+        </a>
+
+        <nav class="nav-menu">
+          <a href="index.html" class="nav-link">Accueil</a>
+          <a href="services.html" class="nav-link active">Nos Services</a>
+          <a href="equipe.html" class="nav-link">L'Équipe</a>
+          <a href="realisations.html" class="nav-link">Chantiers & Galerie</a>
+          <a href="contact.html" class="nav-link">Contact & Devis</a>
+        </nav>
+
+        <div class="header-cta">
+          <a href="contact.html" class="btn btn-primary btn-sm">
+            <span>Demander un devis</span>
+          </a>
+          <button class="mobile-toggle" aria-label="Menu">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Page Banner -->
+  <section style="background: linear-gradient(135deg, var(--color-primary-dark), var(--color-forest)); color: #fff; padding: 4.5rem 0;">
+    <div class="container">
+      <span class="badge badge-white" style="margin-bottom: 1rem;">Savoir-faire & Rigueur Suisse</span>
+      <h1 style="font-family: var(--font-heading); font-size: clamp(2.2rem, 4vw, 3.4rem); font-weight: 800; line-height: 1.2; margin-bottom: 1rem;">
+        Nos Services Arboricoles & Paysagers
+      </h1>
+      <p style="font-size: 1.15rem; max-width: 780px; color: rgba(255,255,255,0.9);">
+        « L'art de prendre soin de vos arbres, par des professionnels. » Découvrez nos prestations détaillées à Genève et dans le canton de Vaud, pensées pour valoriser votre patrimoine arboré dans le respect des règles de l'art.
+      </p>
+    </div>
+  </section>
+
+  <!-- Services Details -->
+  <section class="section">
+    <div class="container">
+
+      <!-- 1. Elagage et soins par grimpe ou nacelle -->
+      <div class="service-detail-block" id="elagage">
+        <div class="service-detail-content">
+          <span class="badge badge-green">Pôle Essentiel</span>
+          <h2 style="font-family: var(--font-heading); font-size: 2.1rem; color: #ffffff; margin: 0.75rem 0 1rem 0;">
+            Entretiens et élagage des arbres par grimpe ou nacelle
+          </h2>
+          <p style="color: var(--color-text-muted); margin-bottom: 1.25rem;">
+            Chaque arbre possède une architecture unique et des exigences biologiques propres. Contrairement aux pratiques d'étêtage agressives qui condamnent les sujets à moyen terme, nous pratiquons une taille douce et raisonnée.
+          </p>
+          <ul style="display: flex; flex-direction: column; gap: 0.75rem; margin-bottom: 1.75rem;">
+            <li style="display: flex; gap: 0.6rem;">
+              <span class="feature-check">&#10003;</span>
+              <span><strong>Élagage sanitaire :</strong> retrait méticuleux du bois mort, branches brisées ou cariées pouvant chuter et transmettre des maladies.</span>
+            </li>
+            <li style="display: flex; gap: 0.6rem;">
+              <span class="feature-check">&#10003;</span>
+              <span><strong>Taille d'éclaircie & allègement :</strong> réduction de la prise au vent pour prévenir la casse lors des tempêtes tout en laissant filtrer la lumière dans votre jardin.</span>
+            </li>
+            <li style="display: flex; gap: 0.6rem;">
+              <span class="feature-check">&#10003;</span>
+              <span><strong>Haubanage dynamique :</strong> pose de cordages textiles haute résistance pour soutenir les charpentières fragilisées sans blesser l'écorce.</span>
+            </li>
+            <li style="display: flex; gap: 0.6rem;">
+              <span class="feature-check">&#10003;</span>
+              <span><strong>Techniques de déplacement :</strong> sur cordes légères avec protection des cambiums, ou par nacelle élévatrice pour les accès délicats.</span>
+            </li>
+          </ul>
+          <a href="contact.html?service=elagage" class="btn btn-primary">Demander une étude d'élagage</a>
+        </div>
+        <div class="service-detail-img">
+          <div class="service-detail-img-wrap">
+            <img src="images/hero.jpg" alt="Arboriste grimpeur ASG élaguant un grand chêne">
+          </div>
+        </div>
+      </div>
+
+      <!-- 2. Taille fruitière et arbustes -->
+      <div class="service-detail-block reverse" id="fruitiers">
+        <div class="service-detail-img">
+          <div class="service-detail-img-wrap">
+            <img src="images/service_taille_fruitier.jpg" alt="Taille fruitière minutieuse d'arbres fruitiers par ASG">
+          </div>
+        </div>
+        <div class="service-detail-content">
+          <span class="badge badge-wood">Vergers & Jardins</span>
+          <h2 style="font-family: var(--font-heading); font-size: 2.1rem; color: #ffffff; margin: 0.75rem 0 1rem 0;">
+            Taille fruitières et entretien d'arbustes
+          </h2>
+          <p style="color: var(--color-text-muted); margin-bottom: 1.25rem;">
+            Les arbres fruitiers (pommiers, poiriers, cerisiers, pruniers, cognassiers) nécessitent une connaissance pointue de la fructification et des flux de sève pour garantir une récolte généreuse et prévenir les chancres et parasites.
+          </p>
+          <ul style="display: flex; flex-direction: column; gap: 0.75rem; margin-bottom: 1.75rem;">
+            <li style="display: flex; gap: 0.6rem;">
+              <span class="feature-check">&#10003;</span>
+              <span><strong>Taille d'hiver et de formation :</strong> orientation équilibrée des branches charpentières sur les jeunes sujets pour une structure saine et pérenne.</span>
+            </li>
+            <li style="display: flex; gap: 0.6rem;">
+              <span class="feature-check">&#10003;</span>
+              <span><strong>Rajeunissement de vergers anciens :</strong> restructuration progressive des vieux arbres fruitiers genevois et vaudois.</span>
+            </li>
+            <li style="display: flex; gap: 0.6rem;">
+              <span class="feature-check">&#10003;</span>
+              <span><strong>Taille des haies et arbustes d'ornement :</strong> mise en forme architecturée ou libre pour respecter les périodes de floraison.</span>
+            </li>
+          </ul>
+          <a href="contact.html?service=fruitiers" class="btn btn-secondary">Prendre rendez-vous verger</a>
+        </div>
+      </div>
+
+      <!-- 3. Abattages spéciaux et dessouchage -->
+      <div class="service-detail-block" id="abattage">
+        <div class="service-detail-content">
+          <span class="badge badge-green">Sécurité Absolue</span>
+          <h2 style="font-family: var(--font-heading); font-size: 2.1rem; color: #ffffff; margin: 0.75rem 0 1rem 0;">
+            Abattages spéciaux & dessouchage mécanique
+          </h2>
+          <p style="color: var(--color-text-muted); margin-bottom: 1.25rem;">
+            Quand un arbre est dépérissant, dangereux ou incompatible avec des contraintes de construction, son abattage doit être effectué avec une précision d'orfèvre, particulièrement en milieu urbain dense ou au-dessus de toitures et lignes électriques.
+          </p>
+          <ul style="display: flex; flex-direction: column; gap: 0.75rem; margin-bottom: 1.75rem;">
+            <li style="display: flex; gap: 0.6rem;">
+              <span class="feature-check">&#10003;</span>
+              <span><strong>Démontage par rétention :</strong> chaque branche et tronçon de tronc est amarré à un système de poulies et descendu au sol en douceur sans impacter le sol ou les clôtures.</span>
+            </li>
+            <li style="display: flex; gap: 0.6rem;">
+              <span class="feature-check">&#10003;</span>
+              <span><strong>Dessouchage & rognage mécanique :</strong> notre rogneuse de souche pulvérise le collet et le système racinaire jusqu'à 40 cm de profondeur pour réengazonner ou replanter immédiatement.</span>
+            </li>
+            <li style="display: flex; gap: 0.6rem;">
+              <span class="feature-check">&#10003;</span>
+              <span><strong>Élimination des frelons et parasites :</strong> sécurisation préalable de l'arbre en cas de nid ou de chenilles.</span>
+            </li>
+          </ul>
+          <a href="contact.html?service=abattage" class="btn btn-primary">Devis abattage & dessouchage</a>
+        </div>
+        <div class="service-detail-img">
+          <div class="service-detail-img-wrap">
+            <img src="images/service_abattage_souche.jpg" alt="Abattage délicat par rétention avec rogneuse de souche">
+          </div>
+        </div>
+      </div>
+
+      <!-- 4. Paysagisme, terrasses et bois -->
+      <div class="service-detail-block reverse" id="paysagisme">
+        <div class="service-detail-img">
+          <div class="service-detail-img-wrap">
+            <img src="images/service_paysagisme_bois.jpg" alt="Aménagement paysager et terrasse en bois conçue par ASG">
+          </div>
+        </div>
+        <div class="service-detail-content">
+          <span class="badge badge-wood">Art du Bois & Milieux Naturels</span>
+          <h2 style="font-family: var(--font-heading); font-size: 2.1rem; color: #ffffff; margin: 0.75rem 0 1rem 0;">
+            Travaux de paysagisme & constructions en bois pour le jardin
+          </h2>
+          <p style="color: var(--color-text-muted); margin-bottom: 1.25rem;">
+            En harmonie avec la nature environnante, nous créons des espaces extérieurs chaleureux et durables en utilisant des essences de bois nobles et des aménagements favorables à la faune et la flore locales.
+          </p>
+          <ul style="display: flex; flex-direction: column; gap: 0.75rem; margin-bottom: 1.75rem;">
+            <li style="display: flex; gap: 0.6rem;">
+              <span class="feature-check">&#10003;</span>
+              <span><strong>Terrasses en bois :</strong> conception sur mesure, lambourdage ventilé et platelages élégants et imputrescibles.</span>
+            </li>
+            <li style="display: flex; gap: 0.6rem;">
+              <span class="feature-check">&#10003;</span>
+              <span><strong>Haies vives & bocagères :</strong> sélection de variétés locales adaptées au climat genevois pour créer des brise-vues vivants et mellifères.</span>
+            </li>
+            <li style="display: flex; gap: 0.6rem;">
+              <span class="feature-check">&#10003;</span>
+              <span><strong>Constructions en bois pour le jardin :</strong> pergolas, claustras, bacs potagers surélevés et abris de jardin.</span>
+            </li>
+            <li style="display: flex; gap: 0.6rem;">
+              <span class="feature-check">&#10003;</span>
+              <span><strong>Milieux naturels :</strong> création de mares naturelles, pierriers et zones refuge pour la biodiversité.</span>
+            </li>
+          </ul>
+          <a href="contact.html?service=paysagisme" class="btn btn-secondary">Parlez-nous de votre projet paysager</a>
+        </div>
+      </div>
+
+      <!-- 5. Transport et nacelle -->
+      <div class="service-detail-block" id="transport">
+        <div class="service-detail-content">
+          <span class="badge badge-green">Matériel Spécifique</span>
+          <h2 style="font-family: var(--font-heading); font-size: 2.1rem; color: #ffffff; margin: 0.75rem 0 1rem 0;">
+            Transport jusqu'à 4,5 tonnes & logistique de chantier
+          </h2>
+          <p style="color: var(--color-text-muted); margin-bottom: 1.25rem;">
+            Un chantier d'arboriculture réussi se mesure aussi à la netteté absolue du lieu après le départ de l'équipe. ASG dispose de sa propre flotte de transport permettant de gérer des volumes conséquents sans dépendre de sous-traitants.
+          </p>
+          <ul style="display: flex; flex-direction: column; gap: 0.75rem; margin-bottom: 1.75rem;">
+            <li style="display: flex; gap: 0.6rem;">
+              <span class="feature-check">&#10003;</span>
+              <span><strong>Véhicules utilitaires avec benne jusqu'à 4.5T :</strong> gabarits adaptés aux allées étroites de propriétés tout en assurant une capacité de charge optimale.</span>
+            </li>
+            <li style="display: flex; gap: 0.6rem;">
+              <span class="feature-check">&#10003;</span>
+              <span><strong>Broyage autonome :</strong> broyeur de branches mobile transformant instantanément les branchages en copeaux de paillage pour enrichir vos massifs.</span>
+            </li>
+            <li style="display: flex; gap: 0.6rem;">
+              <span class="feature-check">&#10003;</span>
+              <span><strong>Évacuation & recyclage vert :</strong> valorisation en compostage certifié suisse ou filière bois-énergie régionale.</span>
+            </li>
+          </ul>
+          <a href="contact.html?service=transport" class="btn btn-primary">Organiser une évacuation</a>
+        </div>
+        <div class="service-detail-img">
+          <div class="service-detail-img-wrap">
+            <img src="images/service_transport_camion.jpg" alt="Camion benne 4.5T et broyeur pour transport de déchets verts">
+          </div>
+        </div>
+      </div>
+
+      <!-- Cadre Réglementation Genève & Vaud -->
+      <div class="reglementation-box">
+        <div style="display: flex; gap: 1.25rem; align-items: flex-start; flex-wrap: wrap;">
+          <div style="width: 48px; height: 48px; border-radius: 12px; background: var(--color-forest); color: #fff; display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-size: 1.5rem;">
+            &#9888;
+          </div>
+          <div style="flex: 1; min-width: 280px;">
+            <h3 style="font-family: var(--font-heading); font-size: 1.35rem; color: #ffffff; margin-bottom: 0.5rem;">
+              Réglementation & Autorisations d'abattage à Genève et dans le canton de Vaud
+            </h3>
+            <p style="font-size: 0.95rem; color: var(--color-text-main); line-height: 1.6; margin-bottom: 0.75rem;">
+              Dans le canton de Genève, la protection du patrimoine arboré est encadrée par la Direction générale de l'environnement (DGE) en vertu de la loi sur la protection des arbres (LPrA). L'abattage de tout arbre dont le tronc dépasse une certaine circonférence ou situé en zone de protection nécessite une autorisation préalable délivrée par le canton.
+            </p>
+            <p style="font-size: 0.92rem; color: var(--color-text-muted); line-height: 1.6;">
+              <strong>ASG vous accompagne :</strong> Nous effectuons le diagnostic phytosanitaire de votre arbre, préparons le dossier technique motivé (dangerosité, maladie, déclin irréversible) et facilitons vos démarches administratives auprès de l'administration genevoise et vaudoise.
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h4 class="footer-brand-title">ASG Arbres Services Genève</h4>
+          <p class="footer-desc">
+            « L'art de prendre soin de vos arbres, par des professionnels. »<br>
+            Entreprise suisse basée à Satigny (GE), dirigée par Bendik Häuserman.
+          </p>
+          <div class="lang-badge" style="background: rgba(255,255,255,0.08); color: #fff;">
+            Langues : Français &bull; English &bull; Deutsch
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Services</h4>
+          <ul class="footer-links">
+            <li><a href="services.html#elagage">Élagage par grimpe & nacelle</a></li>
+            <li><a href="services.html#fruitiers">Taille fruitière & arbustes</a></li>
+            <li><a href="services.html#abattage">Abattage délicat & démontage</a></li>
+            <li><a href="services.html#abattage">Dessouchage & rognage</a></li>
+            <li><a href="services.html#paysagisme">Terrasses bois & paysagisme</a></li>
+            <li><a href="services.html#transport">Transport jusqu'à 4.5 T</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="services.html">Nos Prestations</a></li>
+            <li><a href="equipe.html">L'Équipe & Valeurs</a></li>
+            <li><a href="realisations.html">Galerie de Chantiers</a></li>
+            <li><a href="contact.html">Demande de Devis</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Contact Direct</h4>
+          <p style="font-size: 0.92rem; margin-bottom: 0.8rem;">
+            <strong>Bendik Häuserman</strong><br>
+            Satigny (GE), Suisse
+          </p>
+          <p style="font-size: 0.92rem; margin-bottom: 0.8rem;">
+            Téléphone : <a href="tel:+41799217723" style="color:#a3e6b7; font-weight: bold;">+41 79 921 77 23</a><br>
+            Email : <a href="mailto:bendik.hauserman@bluewin.ch" style="color: #fff;">bendik.hauserman@bluewin.ch</a>
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="footer-bottom-inner">
+          <p>&copy; 2026 ASG Arbres Services Genève. Tous droits réservés.</p>
+          <p>L'art de prendre soin de vos arbres, par des professionnels.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
