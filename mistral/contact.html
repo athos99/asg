@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contactez ASG Arbres Services Genève pour vos besoins en élagage, taille et paysagisme.">
+    <title>Contact | ASG Arbres Services Genève</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="assets/logo.png" alt="Logo ASG Arbres Services Genève" width="100">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="services.html">Nos services</a></li>
+                <li><a href="equipe.html">Notre équipe</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="a-propos.html">À propos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="contact-container">
+        <h1>Contactez-nous</h1>
+        <p>Nous intervenons à Genève et dans le canton de Vaud pour tous vos besoins en élagage, taille et paysagisme.</p>
+
+        <div class="contact-info">
+            <h2>Nos coordonnées</h2>
+            <p><strong>ASG Arbres Services Genève</strong></p>
+            <p>Bendik Häuserman, Satigny (GE)</p>
+            <p>Téléphone: <a href="tel:+41799217723">+41 79 921 77 23</a></p>
+            <p>Email: <a href="mailto:bendik.hauserman@bluewin.ch">bendik.hauserman@bluewin.ch</a></p>
+            <p>Langues parlées: Français, Anglais, Allemand</p>
+        </div>
+
+        <div class="contact-form">
+            <h2>Envoyez-nous un message</h2>
+            <form action="#" method="POST" onsubmit="return validateForm()">
+                <div class="form-group">
+                    <label for="nom">Nom *</label>
+                    <input type="text" id="nom" name="nom" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email *</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="telephone">Téléphone</label>
+                    <input type="tel" id="telephone" name="telephone">
+                </div>
+                <div class="form-group">
+                    <label for="type-client">Type de client *</label>
+                    <select id="type-client" name="type-client" required>
+                        <option value="">-- Sélectionnez --</option>
+                        <option value="particulier">Particulier</option>
+                        <option value="regie">Régie immobilière</option>
+                        <option value="entreprise">Entreprise</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message *</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="button">Envoyer</button>
+            </form>
+            <p class="form-note">* Champs obligatoires. Ce formulaire utilise votre client mail par défaut pour l'envoi.</p>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 ASG Arbres Services Genève | <a href="mailto:bendik.hauserman@bluewin.ch">bendik.hauserman@bluewin.ch</a></p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
